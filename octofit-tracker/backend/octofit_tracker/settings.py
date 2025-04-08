@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "octofit_app",
 ]
 
+INSTALLED_APPS += ["djongo"]
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
