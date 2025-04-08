@@ -28,10 +28,7 @@ router.register(r'activity', views.ActivityViewSet, basename='activity')
 router.register(r'leaderboard', views.LeaderboardViewSet, basename='leaderboard')
 router.register(r'workouts', views.WorkoutViewSet, basename='workout')
 
-# Define the API root
-api_root = path('', include(router.urls))
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    api_root,
+    path('', include(router.urls)),  # Include the router's URLs directly
 ]
