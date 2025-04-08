@@ -80,6 +80,19 @@ DATABASES = {
     }
 }
 
+# Additional Djongo settings for MongoDB
+DATABASES['default'].update({
+    'CLIENT': {
+        'host': 'localhost',
+        'port': 27017,
+        'username': 'your_username',
+        'password': 'your_password',
+        'authSource': 'admin',
+    },
+    'ENFORCE_SCHEMA': True,
+    'CONN_MAX_AGE': 600,
+})
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
