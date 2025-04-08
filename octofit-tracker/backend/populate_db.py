@@ -40,12 +40,3 @@ Leaderboard.objects.create(user=user1, points=100)
 Leaderboard.objects.create(user=user2, points=150)
 
 print("Test data added successfully!")
-
-# Add test data to the database
-def populate():
-    User.objects.create(username="testuser1", email="test1@example.com", password="password123")
-    User.objects.create(username="testuser2", email="test2@example.com", password="password123")
-    print("Test data added successfully.")
-
-if __name__ == "__main__":
-    populate()
