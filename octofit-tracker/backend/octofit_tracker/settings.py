@@ -29,7 +29,12 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# https://docs.djangoproject.com/en/5.2/ref/settings/#installed-apps
+# https://docs.djangoproject.com/en/5.2/ref/settings/#middleware
+# https://docs.djangoproject.com/en/5.2/ref/settings/#templates
+# https://docs.djangoproject.com/en/5.2/ref/settings/#wsgi-application
+# https://docs.djangoproject.com/en/5.2/ref/settings/#root-urlconf
+# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
